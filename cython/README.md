@@ -14,4 +14,4 @@ python
 Hello World
 ```
 
-### Fibonaci
+### Fibonacci
