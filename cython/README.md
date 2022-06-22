@@ -1,6 +1,11 @@
 # Cython
+https://cython.readthedocs.io/en/latest/index.html
 ## Basic Tutorial
 ref: https://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html
+
+cythonコードの記述方法は大きく分けて2種類
+- `.py`: `cython`をimportして変数アノテーションを使って記述．
+- `.pyx`: `cdef`を用いてC言語風に記述．
 
 build `helloworld.pyx`
 ```
@@ -43,3 +48,8 @@ $ python -m timeit -s 'from primes_python_compiled import primes' 'primes(1000)'
 $ python -m timeit -s 'from primes import primes' 'primes(1000)'
 200 loops, best of 5: 1.37 msec per loop
 ```
+
+## IPython
+ref: https://cython.readthedocs.io/en/latest/src/quickstart/build.html
+
+`notebooks/cython_helloworld.ipynb`
